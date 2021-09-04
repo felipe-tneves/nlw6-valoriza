@@ -1,0 +1,7 @@
+yarn/npm add typescript -D - instala o typescript como dependencia de desenvolvimento
+node index.js - inicializa o projeto
+yarn/npm tsc --init - inicializa o typescript
+yarn tsc - converte o código para o js 
+yarn add express - rotas 
+yarn add @types/express -D - instala os tipos de uma biblioteca como por exemplo o express (@biblioteca/express) isso acontece quando aparece os 3 pontinhos antes de importar uma bibloiteca
+yarn add ts-node-dev -D - responsavel por converter o type script para uma forma que o node entenda 
