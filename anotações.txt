@@ -5,3 +5,45 @@ yarn tsc - converte o código para o js
 yarn add express - rotas 
 yarn add @types/express -D - instala os tipos de uma biblioteca como por exemplo o express (@biblioteca/express) isso acontece quando aparece os 3 pontinhos antes de importar uma bibloiteca
 yarn add ts-node-dev -D - responsavel por converter o type script para uma forma que o node entenda 
+Install the npm package:
+
+npm install typeorm --save
+
+You need to install reflect-metadata shim:
+
+npm install reflect-metadata --save
+
+and import it somewhere in the global place of your app (for example in app.ts):
+
+import "reflect-metadata";
+
+Install a database driver:
+
+for SQLite
+
+npm install sqlite3 --save
+
+yarn typeorm reflect-metadata slqlite3 - instalando o drive da banco de dados 
+
+---------------------------------------------------------------------------------
+
+/**
+ * GET => Busca uma informação
+ * POST => Inserir (Criar) uma informação
+ * PUT => Alterar uma informação 
+ * DELETE => Remover um dado
+ * PATCH => Alterar uma informação específica 
+ */
+/**
+* Tipos de parâmetros:
+* Routes Params => http://localhost:3000/produtos/123456789
+* Query Params => http://localhost:3000/produtos?name=teclado&description=tecladobom 
+*
+* Body Params => {
+*  "name": "teclado",
+*   "description": "teclado bom"  
+* }
+*/
+// Request => Entrando  req
+// Response => Saindo   res
+
