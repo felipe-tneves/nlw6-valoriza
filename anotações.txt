@@ -78,3 +78,11 @@ Regras
     - Não é permitido cadastrar elogios para usuários inválidos 
 
 -> Server -> controller -> Service -> Repositories -> BD
+
+-> server -> routes -> controller -> Service 
+
+yarn add express-async-errors - biblioteca que habilita a tratativa de errors
+
+---------- 
+Criando a migration
+yarn typeorm migration:create -n CreateTags
