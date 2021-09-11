@@ -52,3 +52,29 @@ npm install sqlite3 --save
 yarn typeorm migration:create -n CreateUsers - cria o migrations
 yarn typeorm migration:run - ele inicia as migrations
 yarn typeorm migration:revert - remove a migrations
+
+se adicionado em ormconfig: yarn typeorm entity:create -n User - cria a entidade automaticamente 
+yarn add uuid - 
+yarn add @types/uuid -D - 
+
+Entity (User) <-> ORM <-> BD 
+          Repositórios - é a camada responsavel pela comunicação entre a entidade e o banco de dados 
+
+NLW Valoriza
+
+Regras
+
+[ ] Cadastro de usuário
+    - Não é permitido cadastrar mais de um usuário com o mesmo e-mail
+    - Não é permitido cadastrar usuário sem e-mail
+
+[ ] Cadastro de TAG
+    - Não é permitido cadastrar mais de uma tag com o mesmo nome
+    - Não é permitido cadastrar tag sem nome
+    - Não é permitido o Cadastro por usuário que não sejam administradores
+
+[ ] Cadastro de elogios
+    - Não é permitido um usuário cadastrar um elogio para si 
+    - Não é permitido cadastrar elogios para usuários inválidos 
+
+-> Server -> (  ) -> Service -> Repositories -> BD
