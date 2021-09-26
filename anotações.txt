@@ -86,3 +86,11 @@ yarn add express-async-errors - biblioteca que habilita a tratativa de errors
 ---------- 
 Criando a migration
 yarn typeorm migration:create -n CreateTags
+
+yarn typeorm  migration:run
+
+yarn add jsonwebtoken - biblioteca responsavel por criar nosso token 
+
+yarn add @types/jsonwebtoken -D -- tipagem 
+
+yarn typeorm migration:create -n AlterUserAddPassword  -- para adicionar uma coluna nova 
