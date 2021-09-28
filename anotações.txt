@@ -94,3 +94,8 @@ yarn add jsonwebtoken - biblioteca responsavel por criar nosso token
 yarn add @types/jsonwebtoken -D -- tipagem 
 
 yarn typeorm migration:create -n AlterUserAddPassword  -- para adicionar uma coluna nova 
+
+yarn add bcriptjs -- para criptografar nosso token 
+
+yarn add @types/bcriptjs -D -- typescrit 
+
