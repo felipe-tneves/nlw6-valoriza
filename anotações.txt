@@ -99,3 +99,7 @@ yarn add bcriptjs -- para criptografar nosso token
 
 yarn add @types/bcriptjs -D -- typescrit 
 
+yarn typeorm migration:create -n CreateCompliments -- criando a migrations de elogios 
+
+
+
